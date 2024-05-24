@@ -1,0 +1,346 @@
+:root {
+  --text-color-black: #000;
+  --text-color-gray: #999;
+  --text-color-lightgray: #ddd;
+  --text-color-white: #fff;
+
+  --button-color-black: #000;
+  --border-color-black: #000;
+  --border-color-gray: #999;
+
+  --background-white: #fff;
+  --background-gray: #ddd;
+  --background-black: #000;
+}
+
+::-moz-selection {
+  color: var(--text-color-white);
+  background-color: var(--background-black);
+}
+
+::selection {
+  color: var(--text-color-white);
+  background-color: var(--background-black);
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  html {
+    font-size: calc(12px + (24 - 12) * ((100vw - 360px) / (768 - 360)));
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: calc(16px + 1vw);
+  }
+}
+
+body {
+  margin: 20px 10px;
+  padding: 0;
+  font-family: "pretendard-comb-type", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 1rem;
+
+  background: transparent;
+}
+
+#calendar {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#content {
+  max-width: 720px;
+  margin: 1rem auto 2rem;
+}
+
+footer > section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > section > p,
+footer > section > a {
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 0.375rem;
+  line-height: 1.5;
+  color: var(--text-color-black);
+  transition: color 0.125s;
+}
+
+footer > section > a:hover {
+  color: var(--text-color-black);
+}
+
+.fc table {
+  font-size: 0.375rem;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 0.5rem;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 1rem;
+}
+
+.fc-h-event {
+  background: #000;
+  border-color: #000;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background: #f8f8f8;
+}
+
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  color: orangered;
+
+  /* font-size: 75%;
+        text-align: center;
+        vertical-align: middle;
+        width: 0.75rem;
+        height: 0.75rem;
+        line-height: 0.5rem;
+        margin-top: 5px;
+        border-radius: 999px; */
+}
+
+.fc .fc-cell-shaded,
+.fc .fc-day-disabled {
+  background: #fff;
+}
+
+.fc .fc-day-future {
+  background: #fff;
+}
+
+.fc .fc-day-future .fc-daygrid-day-number {
+  opacity: 0.3;
+}
+
+.fc .fc-button {
+  border-radius: 0;
+  border: none;
+}
+
+.fc .fc-scrollgrid-section-liquid > td {
+  border: none;
+}
+
+.fc .fc-button-primary {
+  background: #000;
+  transition: background 0.125s;
+}
+
+.fc .fc-button-primary:hover {
+  background: #ddd;
+  color: #000;
+}
+
+.fc .fc-button:disabled,
+.fc .fc-button-primary:disabled {
+  background: transparent;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.fc .fc-button .fc-icon {
+  color: #000;
+}
+
+.fc .fc-button:disabled,
+.fc .fc-button:disabled .fc-icon {
+  color: #bbb;
+  border-color: transparent;
+}
+
+.fc .fc-button:disabled:hover,
+.fc .fc-button:disabled .fc-icon:hover {
+  color: #bbb;
+  background: transparent;
+}
+
+.fc .fc-button-primary:not(:disabled):active {
+  color: #fff;
+}
+
+.fc .fc-button-primary:not(:disabled):active .fc-icon-chevron-left::before,
+.fc .fc-button-primary:not(:disabled):active .fc-icon-chevron-right::before {
+  color: #fff;
+}
+
+.fc-daygrid-event-dot {
+  border-color: #000;
+
+  border-width: 2.5px;
+}
+
+.fc .fc-daygrid-day-bg .fc-non-business {
+  background: #fff;
+}
+
+.fc .fc-daygrid-day-bg .fc-highlight {
+  background: #f8f8f8;
+}
+
+.fc .fc-scrollgrid-liquid,
+.fc-theme-standard td {
+  border-color: silver;
+  background: #f8f8f8;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.fc-scroller {
+  background: #fff;
+}
+
+.fc-theme-standard th,
+.fc-col-header {
+  border-color: gray;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.fc .fc-daygrid-day-bg .fc-non-business {
+  background: #f8f8f8;
+}
+
+.fc .fc-daygrid-week-number {
+  background: #f8f8f8;
+}
+
+.fc-daygrid-block-event .fc-event-time,
+.fc-daygrid-block-event .fc-event-title {
+  padding: 1px 0 3px 2px;
+}
+
+a.fc-event {
+  color: inherit;
+}
+
+.fc .fc-button-primary {
+  font-size: 0.375rem;
+  background: #fff;
+  color: #000;
+}
+
+.fc-daygrid-dot-event .fc-event-title {
+  font-weight: normal;
+}
+
+.fc .fc-daygrid-day-bottom {
+  font-size: 0.75em;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-size: 0.375rem;
+  font-weight: normal;
+
+  padding-bottom: 6px;
+}
+
+.fc-daygrid-dot-event {
+  align-items: start;
+}
+
+.fc-daygrid-dot-event .fc-event-title {
+  white-space: normal !important;
+}
+
+.fc-h-event .fc-event-title-container {
+  cursor: pointer;
+}
+
+.fc .fc-view-harness-active > .fc-view {
+  border: none;
+  border-bottom: 1px solid silver;
+}
+
+.fc-direction-ltr .fc-list-table .fc-list-event-graphic,
+.fc .fc-list-day-cushion,
+.fc .fc-list-table td {
+  border: none;
+}
+
+.fc .fc-list-table td {
+  cursor: pointer;
+}
+
+.fc-list-event-time {
+  display: none;
+}
+
+.fc-direction-ltr .fc-list-day-text,
+.fc-direction-rtl .fc-list-day-side-text,
+.fc-direction-ltr .fc-list-day-side-text,
+.fc-direction-rtl .fc-list-day-text {
+  font-weight: normal;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-start,
+.fc-direction-rtl .fc-daygrid-event.fc-event-end {
+  margin-left: 6px;
+}
+
+h1 {
+  font-size: 0.625rem;
+  line-height: 1.7;
+
+  margin-bottom: 0.25rem;
+}
+
+p {
+  font-size: 0.5625rem;
+  line-height: 1.725;
+
+  word-break: keep-all;
+  text-indent: 1em;
+}
+
+sub {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .fc .fc-toolbar-title {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
