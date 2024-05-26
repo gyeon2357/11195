@@ -141,7 +141,13 @@ footer > section > a:hover {
   opacity: 0.3;
 }
 
+.fc-daygrid-event {
+  border-radius: 0;
+}
+
 .fc .fc-button {
+  padding: 0.3125em 0.5em;
+
   border-radius: 0;
   border: none;
 }
@@ -282,6 +288,10 @@ a.fc-event {
 .fc .fc-view-harness-active > .fc-view {
   border: none;
   border-bottom: 1px solid silver;
+}
+
+.fc-list-event-dot {
+  border-color: silver;
 }
 
 .fc-direction-ltr .fc-list-table .fc-list-event-graphic,
