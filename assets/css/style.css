@@ -53,7 +53,6 @@ html {
 }
 
 body {
-  margin: 20px 10px;
   padding: 0;
   font-family: "pretendard-comb-type", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
@@ -62,6 +61,28 @@ body {
   font-size: 1rem;
 
   background: transparent;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  max-width: 720px;
+  margin: 0.25rem auto;
+  padding: 0 0 0.25rem;
+  border-bottom: 1px solid black;
+}
+
+header > h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header a {
+  color: inherit;
 }
 
 #calendar {
@@ -92,6 +113,16 @@ footer > section > a {
 
 footer > section > a:hover {
   color: var(--text-color-black);
+}
+
+pre {
+  font-size: 0.25rem;
+
+  margin: 0.5rem auto 1.5rem;
+
+  color: cornflowerblue;
+  scale: 0.6;
+  opacity: 0.6;
 }
 
 .fc table {
@@ -340,8 +371,33 @@ sub {
 }
 
 @media (max-width: 768px) {
+  #content {
+    margin: 2rem 1rem;
+  }
+
+  header {
+    margin: 0.5rem auto 1rem;
+    padding: 0 0 0.5rem;
+  }
+
+  footer > section > p,
+  footer > section > a {
+    font-size: 0.75rem;
+  }
+  .fc table {
+    font-size: 0.875rem;
+  }
   .fc .fc-toolbar-title {
     font-size: 1.25rem;
+  }
+  .fc .fc-button-primary {
+    font-size: 0.75rem;
+  }
+  .fc .fc-daygrid-day-bottom {
+    font-size: 1.25em;
+  }
+  .fc .fc-col-header-cell-cushion {
+    font-size: 0.75rem;
   }
 
   h1 {
@@ -352,5 +408,9 @@ sub {
 
   p {
     font-size: 1rem;
+  }
+
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 2rem;
   }
 }
