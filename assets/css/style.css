@@ -98,6 +98,8 @@ header a {
 footer > section {
   display: flex;
   flex-direction: column;
+
+  margin: 0 auto 2rem;
 }
 
 footer > section > p,
@@ -116,12 +118,15 @@ footer > section > a:hover {
 }
 
 pre {
-  font-size: 0.125rem;
   margin: 0.5rem auto 1.5rem;
 
-  color: steelblue;
+  font-size: 0.125rem;
+  text-align: center;
 
-  opacity: 0.4;
+  transform: scale(0.8);
+
+  color: steelblue;
+  opacity: 0.6;
 }
 
 .fc table {
@@ -392,11 +397,14 @@ p {
   line-height: 1.725;
 
   word-break: keep-all;
-  text-indent: 1em;
 }
 
 sub {
   margin: 0 auto;
+}
+
+u {
+  text-underline-position: under;
 }
 
 @media (max-width: 768px) {
@@ -450,7 +458,6 @@ sub {
   }
 
   pre {
-    margin: 2rem auto 3rem;
     font-size: 0.375rem;
   }
 }
