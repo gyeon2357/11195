@@ -439,11 +439,21 @@ u {
     font-size: 0.875rem;
   }
   .fc .fc-toolbar-title {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
+
+  .fc .fc-button {
+    padding: 0.5em 0.5em;
+  }
+
   .fc .fc-button-primary {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
+
+  .fc .fc-button .fc-icon {
+    font-size: 1.5rem;
+  }
+
   .fc .fc-daygrid-day-bottom {
     font-size: 1.25em;
   }
@@ -467,7 +477,7 @@ u {
   }
 
   .fc .fc-toolbar.fc-header-toolbar {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   pre {
