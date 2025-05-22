@@ -142,8 +142,8 @@ pre {
 }
 
 .fc-h-event {
-  background: #000;
-  border-color: #000;
+  background: dimgray;
+  border-color: dimgray;
 }
 
 .fc .fc-daygrid-day.fc-day-today {
@@ -230,7 +230,7 @@ pre {
 
 .fc .fc-button-primary:not(:disabled).fc-button-active,
 .fc .fc-button-primary:not(:disabled):active {
-  background: gray;
+  background: black;
 }
 
 .fc .fc-button-group > .fc-button.fc-button-active,
@@ -443,7 +443,7 @@ u {
   }
 
   .fc .fc-button {
-    padding: 0.5em 0.5em;
+    padding: 0.3125em 0.625em;
   }
 
   .fc .fc-button-primary {
