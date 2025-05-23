@@ -1,7 +1,12 @@
 [
   {
+    "title": "Semigraphics",
+    "start": "2023-09-09",
+    "description": "Text-based semigraphics, pseudographics, or character graphics is a primitive method used in early text mode video hardware to emulate raster graphics without having to implement the logic for such a display mode.<br/>There are two different ways to accomplish the emulation of raster graphics. The first one is to create a low-resolution all points addressable mode using a set of special characters with all binary combinations of a certain subdivision matrix of the text mode character size; this method is referred to as block graphics, or sometimes mosaic graphics.<br/>The second one is to use special shapes instead of glyphs (letters and figures) that appear as if drawn in raster graphics mode, sometimes referred to as semi- or pseudo-graphics; an important example of this is box-drawing characters.<br/>Semigraphical characters (including some block elements) are still incorporated into the BIOS of any VGA compatible video card, so any PC can display these characters from the moment it is turned on, even when no operating system is yet loaded. Single and double lines are still often drawn with this method when the system uses text mode; for example when running the BIOS setup program.<br/><br/><a href='https://en.wikipedia.org/wiki/Semigraphics'>—https://en.wikipedia.org/wiki/Semigraphics</a>"
+  },
+  {
     "title": "클럽",
     "start": "2023-04-26",
-    "description": "<a href='https://1mb.club'>—https://1mb.club</a><br/><a href='https://512kb.club'>—https://512kb.club</a><br/><a href='https://250kb.club'>—https://250kb.club</a>"
+    "description": "<a href='https://1mb.club'>1mb.club</a><a href='https://512kb.club'>512kb.club</a><a href='https://250kb.club'>250kb.club</a>"
   }
 ]

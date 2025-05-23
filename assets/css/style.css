@@ -407,7 +407,7 @@ p {
   display: block;
   font-size: 0.45rem;
   line-height: 1.2;
-  inline-size: 32ch;
+  inline-size: 80%;
   overflow-wrap: break-word;
 }
 
